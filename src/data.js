@@ -1,10 +1,13 @@
+import { getAssetPath } from './utils/path';
+
 // Background images used across the website
+// Note: getAssetPath will automatically prefix with basePath in production
 export const backgroundImages = {
-  hero: '/img/1-1.jpeg',
-  // footer: '/img/bg-sp.jpg',
-  imgBg: '/img/img-bg.webp',
-  // whyChoose: '/img/bg-sp.jpeg', 
-  icon: '/img/logo.svg'
+  hero: getAssetPath('/img/1-1.jpeg'),
+  // footer: getAssetPath('/img/bg-sp.jpg'),
+  imgBg: getAssetPath('/img/img-bg.webp'),
+  // whyChoose: getAssetPath('/img/bg-sp.jpeg'), 
+  icon: getAssetPath('/img/logo.svg')
 };
 
 // Hero carousel images

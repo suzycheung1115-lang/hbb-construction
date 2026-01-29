@@ -1,41 +1,59 @@
 /**
- * Utility function to get the correct path for static assets
- * This ensures basePath is included when building for production
+ * Utility function to get the correct path for static assets with basePath
+ * This ensures basePath is included for GitHub Pages deployment
+ * 
+ * IMPORTANT: Update BASE_PATH to match your repository name
+ * Set to '' for user/organization sites (no repo name in URL)
  */
 
-// Get basePath from Next.js config or environment
-// In production builds with basePath, this will be set
-const getBasePath = () => {
-  // Check if we're in a browser environment
+// BasePath for GitHub Pages - update this to match your repository name
+// This should match the repositoryName in next.config.js
+const BASE_PATH = process.env.NODE_ENV === 'production' ? '/hbb-construction' : '';
+
+/**
+ * Gets the basePath for the current environment
+ * @returns {string} - The basePath (e.g., '/hbb-construction' or '')
+ */
+export const getBasePath = () => {
+  // In browser, try to get from Next.js __NEXT_DATA__
   if (typeof window !== 'undefined') {
-    // Try to get basePath from the current path
-    const path = window.location.pathname;
-    // If path starts with a repository-like segment, extract it
-    // This is a fallback - basePath should be handled by Next.js automatically
-    return '';
+    try {
+      const nextData = window.__NEXT_DATA__;
+      if (nextData && nextData.assetPrefix) {
+        return nextData.assetPrefix;
+      }
+    } catch (e) {
+      // Fallback
+    }
   }
-  return '';
+  
+  // Use the constant (set at build time)
+  return BASE_PATH;
 };
 
 /**
  * Prefixes a path with the basePath if needed
- * For static export with basePath, Next.js should handle this automatically,
- * but this utility can be used as a fallback
+ * Use this for CSS variables, inline styles, or any paths that Next.js doesn't automatically prefix
  * 
  * @param {string} path - The asset path (e.g., '/img/logo.svg')
  * @returns {string} - The path with basePath prefix if needed
  */
 export const getAssetPath = (path) => {
-  // Remove leading slash if present to avoid double slashes
-  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
-  const basePath = getBasePath();
-  
-  // If basePath exists and path doesn't already start with it, add it
-  if (basePath && !path.startsWith(basePath)) {
-    return `${basePath}/${cleanPath}`;
+  // If path is empty, invalid, or already absolute, return as is
+  if (!path || path.startsWith('http') || path.startsWith('//') || path.startsWith('data:')) {
+    return path || '';
   }
   
-  // Return with leading slash
-  return `/${cleanPath}`;
+  const basePath = getBasePath();
+  
+  // Ensure path starts with /
+  const cleanPath = path.startsWith('/') ? path : `/${path}`;
+  
+  // If we have a basePath and path doesn't already include it, add it
+  if (basePath && !cleanPath.startsWith(basePath)) {
+    return `${basePath}${cleanPath}`;
+  }
+  
+  return cleanPath;
 };
 

@@ -29,6 +29,7 @@ const nextConfig = {
   // GitHub Pages basePath - only set in production builds and if repositoryName is provided
   ...(isProduction && repositoryName && { 
     basePath: `/${repositoryName}`,
+    assetPrefix: `/${repositoryName}`, // Also set assetPrefix for static assets
   }),
   trailingSlash: true, // Recommended for GitHub Pages
 };

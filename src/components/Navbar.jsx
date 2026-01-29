@@ -2,6 +2,7 @@ import { Fragment, useRef } from 'react';
 import { useRouter } from 'next/router';
 import useSticky from 'hooks/useSticky';
 import Image from 'next/image.js';
+import PrefixedImage from './PrefixedImage';
 import NextLink from 'components/NextLink';
 import SocialLinks from 'components/SocialLinks';
 import { navigationMenu } from '../data';
@@ -42,7 +43,7 @@ const Navbar = ({
         <NextLink
           href="/"
           title={
-            <Image
+            <PrefixedImage
               unoptimized={true}
               alt="Logo | HBB Construction"
               src="/img/logo.svg"
@@ -64,7 +65,7 @@ const Navbar = ({
           <NextLink
             href="/"
             title={
-              <Image
+              <PrefixedImage
                 alt="Logo | HBB Construction"
                 src="/img/logo.svg"
                 width={160}

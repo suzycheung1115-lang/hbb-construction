@@ -4,6 +4,7 @@ import { Fragment, useEffect, useState } from 'react';
 import ThemeProvider from 'theme/ThemeProvider';
 import Layout from 'components/Layout';
 import { backgroundImages } from '../src/data';
+import { getAssetPath } from '../src/utils/path';
 
 // Import global styles and third-party CSS
 import 'animate.css';
@@ -47,11 +48,11 @@ function MyApp({ Component, pageProps }) {
           <style dangerouslySetInnerHTML={{
             __html: `
               :root {
-                --bg-hero: url('${backgroundImages.hero}');
-                --bg-footer: url('${backgroundImages.footer}') no-repeat bottom left;
-                --bg-img-bg: url('${backgroundImages.imgBg}');
-                --bg-why-choose: url('${backgroundImages.whyChoose}');
-                --img-icon: url('${backgroundImages.icon}');
+                --bg-hero: url('${getAssetPath(backgroundImages.hero)}');
+                --bg-footer: url('${getAssetPath(backgroundImages.footer || '')}') no-repeat bottom left;
+                --bg-img-bg: url('${getAssetPath(backgroundImages.imgBg)}');
+                --bg-why-choose: url('${getAssetPath(backgroundImages.whyChoose || '')}');
+                --img-icon: url('${getAssetPath(backgroundImages.icon)}');
               }
             `
           }} />

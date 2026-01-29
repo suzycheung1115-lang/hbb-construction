@@ -163,7 +163,7 @@ export const processSteps = {
 
 // Badges/Statistics data
 export const badgesData = {
-  backgroundImage: '/img/bg-sp.jpg',
+  backgroundImage: getAssetPath('/img/bg-sp.jpg'),
   items: [
     {
       id: 1,
@@ -318,7 +318,7 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/video/14.mp4',
+            src: getAssetPath('/video/14.mp4'),
             alt: 'Single Family Home Remodel overview',
             isVideo: true
           },
@@ -1381,7 +1381,7 @@ export const aboutSection = {
   para: 'We are INTELLIGENT DESIGN CONSTRUCTION COMPANY. Our designs merge aesthetics with practicality, creating environments that reflect your style.',
   para2: 'Explore our portfolio and envision your home\'s transformation.',
   video: {
-    src: '/video/pic-1.mp4',
+    src: getAssetPath('/video/pic-1.mp4'),
     alt: 'HBB Construction Video'
   }
 };

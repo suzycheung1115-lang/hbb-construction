@@ -11,52 +11,53 @@ export const backgroundImages = {
 };
 
 // Hero carousel images
+// Note: getAssetPath will automatically prefix with basePath in production
 export const heroCarousel = [
   {
     id: 1,
-    image: '/img/1-1.jpeg',
+    image: getAssetPath('/img/1-1.jpeg'),
     title: 'Residential Construction Company in Bay Area',
     subtitle: "We Don't Just Build Homes, We Shape Your Future."
   },
   {
     id: 15,
-    image: '/img/14-2.jpg',
+    image: getAssetPath('/img/14-2.jpg'),
     title: 'Single Family Home Remodel',
     subtitle: 'Building Excellence, One Project at a Time.'
   },
   {
     id: 2,
-    image: '/img/2-1.jpeg',
+    image: getAssetPath('/img/2-1.jpeg'),
     title: 'Quality Construction Services',
     subtitle: 'Built with integrity. Delivered with precision.'
   },
   {
     id: 3,
-    image: '/img/3-1.jpeg',
+    image: getAssetPath('/img/3-1.jpeg'),
     title: 'Your Trusted Construction Partner',
     subtitle: 'Transforming Visions into Reality.'
   },
   {
     id: 4,
-    image: '/img/4-1.jpg',
+    image: getAssetPath('/img/4-1.jpg'),
     title: 'Transforming Residential Construction in California',
     subtitle: 'Thoughtfully built homes, made to last.'
   },
   {
     id: 5,
-    image: '/img/5-1.jpeg',
+    image: getAssetPath('/img/5-1.jpeg'),
     title: 'Transforming Residential Construction in California',
     subtitle: 'Custom homes. Exceptional execution.'
   },
   {
     id: 6,
-    image: '/img/6-1.jpg',
+    image: getAssetPath('/img/6-1.jpg'),
     title: 'Transforming Residential Construction in California',
     subtitle: 'Homes crafted with care and attention to detail.'
   },
   {
     id: 6,
-    image: '/img/7-1.jpeg',
+    image: getAssetPath('/img/7-1.jpeg'),
     title: 'Transforming Residential Construction in California',
     subtitle: 'Precision-built spaces for modern living.'
   }
@@ -195,7 +196,7 @@ export const badgesData = {
 // Footer data
 export const footerData = {
   logo: {
-    src: '/img/logo.svg',
+    src: getAssetPath('/img/logo.svg'),
     alt: 'Logo | HBB Construction',
     width: 200,
     height: 80
@@ -227,7 +228,7 @@ export const whyChooseSection = {
   span: ' Construction',
   location: ' in Bay Area',
   image: {
-    src: '/img/6-1.jpg',
+    src: getAssetPath('/img/6-1.jpg'),
     alt: 'Transforming Residential Construction in Bay Area | HBB CONSTRUCTION',
     width: 600,
     height: 700
@@ -297,7 +298,7 @@ export const projects = [
     slug: 'project-13',
     category: 'House Remodel',
     status: 'completed',
-    image: '/img/14-2.jpg',
+    image: getAssetPath('/img/14-2.jpg'),
     description: 'Large openings allow daylight to penetrate deep into the interior, enhancing spatial depth and clarity.',
     location: 'Los Altos',
     year: '2026',
@@ -307,7 +308,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/14-18.jpg',
+            src: getAssetPath('/img/14-18.jpg'),
             alt: 'Single Family Home Remodel overview'
           }
         ],
@@ -322,7 +323,7 @@ export const projects = [
             isVideo: true
           },
           {
-            src: '/img/14-18.jpg',
+            src: getAssetPath('/img/14-18.jpg'),
             alt: 'Single Family Home Remodel overview'
           },
         ],
@@ -332,11 +333,11 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/14-3.jpeg',
+            src: getAssetPath('/img/14-3.jpeg'),
             alt: 'Residential units',
           },
           {
-            src: '/img/14-4.jpeg',
+            src: getAssetPath('/img/14-4.jpeg'),
             alt: 'Commercial office spaces',
           },
         ]
@@ -345,11 +346,11 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/14-5.jpeg',
+            src: getAssetPath('/img/14-5.jpeg'),
             alt: 'Residential units',
           },
           {
-            src: '/img/14-6.jpeg',
+            src: getAssetPath('/img/14-6.jpeg'),
             alt: 'Commercial office spaces',
           },
         ]
@@ -358,11 +359,11 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/14-7.jpeg',
+            src: getAssetPath('/img/14-7.jpeg'),
             alt: 'Residential units',
           },
           {
-            src: '/img/14-8.jpg',
+            src: getAssetPath('/img/14-8.jpg'),
             alt: 'Commercial office spaces',
           },
         ]
@@ -371,11 +372,11 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/14-9.jpg',
+            src: getAssetPath('/img/14-9.jpg'),
             alt: 'Residential units',
           },
           {
-            src: '/img/14-10.jpeg',
+            src: getAssetPath('/img/14-10.jpeg'),
             alt: 'Commercial office spaces',
           },
         ]
@@ -384,11 +385,11 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/14-10.jpg',
+            src: getAssetPath('/img/14-10.jpg'),
             alt: 'Residential units',
           },
           {
-            src: '/img/14-11.jpeg',
+            src: getAssetPath('/img/14-11.jpeg'),
             alt: 'Commercial office spaces',
           },
         ]
@@ -397,11 +398,11 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/14-12.jpeg',
+            src: getAssetPath('/img/14-12.jpeg'),
             alt: 'Residential units',
           },
           {
-            src: '/img/14-13.jpg',
+            src: getAssetPath('/img/14-13.jpg'),
             alt: 'Commercial office spaces',
           },
         ]
@@ -410,11 +411,11 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/14-14.jpg',
+            src: getAssetPath('/img/14-14.jpg'),
             alt: 'Residential units',
           },
           {
-            src: '/img/14-15.jpg',
+            src: getAssetPath('/img/14-15.jpg'),
             alt: 'Commercial office spaces',
           },
         ]
@@ -423,11 +424,11 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/14-16.jpeg',
+            src: getAssetPath('/img/14-16.jpeg'),
             alt: 'Residential units',
           },
           {
-            src: '/img/14-1.jpg',
+            src: getAssetPath('/img/14-1.jpg'),
             alt: 'Commercial office spaces',
           },
         ]
@@ -440,7 +441,7 @@ export const projects = [
     slug: 'peoject-1',
     category: 'House Demo and Rebuild',
     status: 'completed',
-    image: '/img/1-1.jpeg',
+    image: getAssetPath('/img/1-1.jpeg'),
     description: 'This project stands out with its expansive land area and spacious layout, allowing for a simple design approach without elaborate decorations. The overall aesthetic is serene and understated, reflecting a tranquil beauty. The client is highly satisfied with the overall construction, as it perfectly captures the original design concept of the house.',
     location: 'Pleasanton',
     year: '2024',
@@ -450,11 +451,11 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/1-2.png',
+            src: getAssetPath('/img/1-2.png'),
             alt: 'Building exterior view'
           },
           {
-            src: '/img/1-3.jpeg',
+            src: getAssetPath('/img/1-3.jpeg'),
             alt: 'Construction site overview'
           }
         ],
@@ -464,7 +465,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/1-4.jpeg',
+            src: getAssetPath('/img/1-4.jpeg'),
             alt: 'Interior construction details'
           }
         ],
@@ -474,12 +475,12 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/1-5.jpg',
+            src: getAssetPath('/img/1-5.jpg'),
             alt: 'Building facade',
             description: 'Modern glass facade provides natural lighting and energy efficiency.'
           },
           {
-            src: '/img/1-6.jpeg',
+            src: getAssetPath('/img/1-6.jpeg'),
             alt: 'Structural framework',
             description: 'Reinforced structure ensures long-term stability.'
           }
@@ -489,11 +490,11 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/1-7.jpg',
+            src: getAssetPath('/img/1-7.jpg'),
             alt: 'Building facade',
           },
           {
-            src: '/img/1-8.jpeg',
+            src: getAssetPath('/img/1-8.jpeg'),
             alt: 'Structural framework',
           }
         ]
@@ -502,7 +503,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/1-9.jpeg',
+            src: getAssetPath('/img/1-9.jpeg'),
             alt: 'Interior construction details'
           }
         ],
@@ -515,7 +516,7 @@ export const projects = [
     slug: 'project-2',
     category: 'House Demo and Rebuild',
     status: 'Completed',
-    image: '/img/2-1.jpeg',
+    image: getAssetPath('/img/2-1.jpeg'),
     description: 'Large-scale residential complex with modern amenities and eco-friendly design principles.',
     location: 'Palo Alto',
     year: '2024',
@@ -528,12 +529,12 @@ export const projects = [
             layout: 'two',
             images: [
               {
-                src: '/img/2-2.jpeg',
-                alt: 'Building exterior view'
+                src: getAssetPath('/img/2-2.jpeg'),
+            alt: 'Building exterior view'
               },
               {
-                src: '/img/2-3.jpeg',
-                alt: 'Construction site overview'
+                src: getAssetPath('/img/2-3.jpeg'),
+            alt: 'Construction site overview'
               }
             ],
             description: 'TA calm and luminous interior where space, light, and structure work in quiet harmony.'
@@ -542,8 +543,8 @@ export const projects = [
             layout: 'one',
             images: [
               {
-                src: '/img/2-4.jpeg',
-                alt: 'Interior construction details'
+                src: getAssetPath('/img/2-4.jpeg'),
+            alt: 'Interior construction details'
               }
             ],
             description: 'The living room is conceived as an open, light-filled volume that anchors daily life.'
@@ -552,13 +553,13 @@ export const projects = [
             layout: 'two',
             images: [
               {
-                src: '/img/2-5.jpg',
-                alt: 'Building facade',
+                src: getAssetPath('/img/2-5.jpg'),
+            alt: 'Building facade',
                 description: 'Modern glass facade provides natural lighting and energy efficiency.'
               },
               {
-                src: '/img/2-6.jpg',
-                alt: 'Structural framework',
+                src: getAssetPath('/img/2-6.jpg'),
+            alt: 'Structural framework',
               }
             ]
           },
@@ -566,13 +567,13 @@ export const projects = [
             layout: 'two',
             images: [
               {
-                src: '/img/2-7.png',
-                alt: 'Building facade',
+                src: getAssetPath('/img/2-7.png'),
+            alt: 'Building facade',
                 description: 'Floor-to-ceiling glazing allows daylight to wash gently across the space throughout the day.'
               },
               {
-                src: '/img/2-8.png',
-                alt: 'Structural framework',
+                src: getAssetPath('/img/2-8.png'),
+            alt: 'Structural framework',
                 description: 'The space feels generous yet intimate, defined more by light than by walls.'
               }
             ]
@@ -583,11 +584,11 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/2-9.jpg',
+            src: getAssetPath('/img/2-9.jpg'),
             alt: 'Apartment interiors'
           },
           {
-            src: '/img/2-10.jpeg',
+            src: getAssetPath('/img/2-10.jpeg'),
             alt: 'Community spaces'
           }
         ]
@@ -596,7 +597,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/2-11.jpg',
+            src: getAssetPath('/img/2-11.jpg'),
             alt: 'Landscaping and outdoor areas'
           }
         ]
@@ -605,15 +606,15 @@ export const projects = [
         layout: 'three',
         images: [
           {
-            src: '/img/2-12.jpeg',
+            src: getAssetPath('/img/2-12.jpeg'),
             alt: 'Apartment interiors'
           },
           {
-            src: '/img/2-13.jpeg',
+            src: getAssetPath('/img/2-13.jpeg'),
             alt: 'Community spaces'
           },
           {
-            src: '/img/2-14.jpeg',
+            src: getAssetPath('/img/2-14.jpeg'),
             alt: 'Landscaping and outdoor areas'
           }
         ]
@@ -622,7 +623,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/2-15.jpeg',
+            src: getAssetPath('/img/2-15.jpeg'),
             alt: 'Landscaping and outdoor areas'
           }
         ]
@@ -635,8 +636,8 @@ export const projects = [
     slug: 'project-3',
     category: 'House Remodel',
     status: 'completed',
-    image: '/img/3-1.jpeg',
-    description: 'This project stands out with its expansive land area and spacious layout, allowing for a simple design approach without elaborate decorations. The overall aesthetic is serene and understated, reflecting a tranquil beauty. The client is highly satisfied with the overall construction, as it perfectly captures the original design concept of the house.',
+    image: getAssetPath('/img/3-1.jpeg'),
+            description: 'This project stands out with its expansive land area and spacious layout, allowing for a simple design approach without elaborate decorations. The overall aesthetic is serene and understated, reflecting a tranquil beauty. The client is highly satisfied with the overall construction, as it perfectly captures the original design concept of the house.',
     location: 'Belmont',
     year: '2023',
     heroImage: '/img/3-1.jpeg',
@@ -645,7 +646,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/3-4.jpeg',
+            src: getAssetPath('/img/3-4.jpeg'),
             alt: 'Warehouse exterior overview'
           }
         ],
@@ -655,12 +656,12 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/3-2.jpeg',
+            src: getAssetPath('/img/3-2.jpeg'),
             alt: 'Interior storage area',
             description: 'High-ceiling storage areas maximize vertical space utilization.'
           },
           {
-            src: '/img/3-3.jpg',
+            src: getAssetPath('/img/3-3.jpg'),
             alt: 'Loading dock facilities',
             description: 'The dining area connects seamlessly to the living space, encouraging openness and flow.'
           }
@@ -674,8 +675,8 @@ export const projects = [
     slug: 'project-4',
     category: 'House Remodel',
     status: 'completed',
-    image: '/img/4-1.jpg',
-    description: 'Designed around light, air, and openness, the project reflects a distinctly Californian way of life.',
+    image: getAssetPath('/img/4-1.jpg'),
+            description: 'Designed around light, air, and openness, the project reflects a distinctly Californian way of life.',
     location: 'San Jose',
     year: '2024',
     heroImage: '/img/4-1.jpg',
@@ -684,7 +685,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/4-2.png',
+            src: getAssetPath('/img/4-2.png'),
             alt: 'Interior spaces'
           },
         ]
@@ -693,7 +694,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/4-3.jpeg',
+            src: getAssetPath('/img/4-3.jpeg'),
             alt: 'Interior  spaces'
           }
         ],
@@ -703,12 +704,12 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/4-4.png',
+            src: getAssetPath('/img/4-4.png'),
             alt: 'Conference facilities',
             description: 'A restrained material palette reinforces a calm and timeless interior atmosphere.'
           },
           {
-            src: '/img/4-5.png',
+            src: getAssetPath('/img/4-5.png'),
             alt: 'Common areas and amenities',
             description: 'A calm, material-focused domestic environment.'
           }
@@ -718,7 +719,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/4-6.jpeg',
+            src: getAssetPath('/img/4-6.jpeg'),
             alt: 'Building infrastructure'
           }
         ]
@@ -727,11 +728,11 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/4-7.jpeg',
+            src: getAssetPath('/img/4-7.jpeg'),
             alt: 'Conference facilities',
           },
           {
-            src: '/img/4-8.jpeg',
+            src: getAssetPath('/img/4-8.jpeg'),
             alt: 'Common areas and amenities',
           }
         ]
@@ -740,7 +741,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/4-9.jpg',
+            src: getAssetPath('/img/4-9.jpg'),
             alt: 'Building infrastructure'
           }
         ]
@@ -753,8 +754,8 @@ export const projects = [
     slug: 'Project 5',
     category: 'Residential',
     status: 'completed',
-    image: '/img/5-1.jpeg',
-    description: 'Natural light and simple geometry frame the dining experience with quiet elegance.',
+    image: getAssetPath('/img/5-1.jpeg'),
+            description: 'Natural light and simple geometry frame the dining experience with quiet elegance.',
     location: 'San Jose',
     year: '2023',
     heroImage: '/img/5-1.jpeg',
@@ -763,7 +764,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/5-2.jpeg',
+            src: getAssetPath('/img/5-2.jpeg'),
             alt: 'House exterior'
           }
         ],
@@ -773,12 +774,12 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/5-3.png',
+            src: getAssetPath('/img/5-3.png'),
             alt: 'House interior',
             description: 'The vaulted ceiling expands the sense of volume, allowing the space to breathe vertically.'
           },
           {
-            src: '/img/5-4.png',
+            src: getAssetPath('/img/5-4.png'),
             alt: 'Panoramic city views',
             description: 'Another distinctive feature is the large skylight above the kitchen, which required precise execution from our construction team. The final result showcases an impressive and stylish design.'
           }
@@ -788,7 +789,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/5-5.jpeg',
+            src: getAssetPath('/img/5-5.jpeg'),
             alt: 'Building lobby and concierge'
           }
         ],
@@ -801,8 +802,8 @@ export const projects = [
     slug: 'project-6',
     category: 'House Remodel',
     status: 'completed',
-    image: '/img/6-1.jpg',
-    description: 'The main focus of this project is interior work, with a strong emphasis on the kitchen renovation as per the homeowners\' priorities. We maintained ongoing discussions with the homeowner to ensure that every detail and desired ambiance was meticulously crafted. The kitchen features a specially designed, ultra-modern range hood that aligns with contemporary tastes. Our dedicated efforts ensured the realization of this luxurious kitchen, leaving the homeowner thoroughly satisfied.',
+    image: getAssetPath('/img/6-1.jpg'),
+            description: 'The main focus of this project is interior work, with a strong emphasis on the kitchen renovation as per the homeowners\' priorities. We maintained ongoing discussions with the homeowner to ensure that every detail and desired ambiance was meticulously crafted. The kitchen features a specially designed, ultra-modern range hood that aligns with contemporary tastes. Our dedicated efforts ensured the realization of this luxurious kitchen, leaving the homeowner thoroughly satisfied.',
     location: 'San Mateo',
     year: '2024',
     heroImage: '/img/6-1.jpg',
@@ -811,7 +812,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/6-3.jpg',
+            src: getAssetPath('/img/6-3.jpg'),
             alt: 'New retail wing development'
           }
         ],
@@ -820,7 +821,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/6-4.jpg',
+            src: getAssetPath('/img/6-4.jpg'),
             alt: 'Entertainment complex'
           }
         ],
@@ -830,12 +831,12 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/6-5.jpg',
+            src: getAssetPath('/img/6-5.jpg'),
             alt: 'Food court area',
             description: 'A modern, light-filled space with a sleek, minimalistic design.'
           },
           {
-            src: '/img/6-6.jpg',
+            src: getAssetPath('/img/6-6.jpg'),
             alt: 'Parking facility expansion',
             description: 'A spacious and open area with a modern, minimalistic design.'
           }
@@ -845,12 +846,12 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/6-7.jpg',
+            src: getAssetPath('/img/6-7.jpg'),
             alt: 'Food court area',
             description: 'The house reflects a contemporary interpretation of Californian residential architecture.'
           },
           {
-            src: '/img/6-8.jpg',
+            src: getAssetPath('/img/6-8.jpg'),
             alt: 'Parking facility expansion',
             description: 'The interior prioritizes lived experience over formal expression.'
           }
@@ -860,7 +861,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/6-2.jpg',
+            src: getAssetPath('/img/6-2.jpg'),
             alt: 'Mall expansion construction'
           }
         ],
@@ -873,8 +874,8 @@ export const projects = [
     slug: 'Project 7',
     category: 'House Remodel',
     status: 'completed',
-    image: '/img/7-3.jpeg',
-    description: 'The main focus of this project is interior work, with a strong emphasis on the kitchen renovation as per the homeowner\'s priorities. We maintained ongoing discussions with the homeowner to ensure that every detail and desired ambiance was meticulously crafted. The kitchen features a specially designed, ultra-modern range hood that aligns with contemporary tastes. \nOur dedicated efforts ensured the realization of this luxurious kitchen, leaving the homeowner thoroughly satisfied.',
+    image: getAssetPath('/img/7-3.jpeg'),
+            description: 'The main focus of this project is interior work, with a strong emphasis on the kitchen renovation as per the homeowner\'s priorities. We maintained ongoing discussions with the homeowner to ensure that every detail and desired ambiance was meticulously crafted. The kitchen features a specially designed, ultra-modern range hood that aligns with contemporary tastes. \nOur dedicated efforts ensured the realization of this luxurious kitchen, leaving the homeowner thoroughly satisfied.',
     location: 'Newark',
     year: '2023',
     heroImage: '/img/7-3.jpeg',
@@ -883,7 +884,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/7-4.jpeg',
+            src: getAssetPath('/img/7-4.jpeg'),
             alt: 'Campus overview'
           }
         ],
@@ -893,11 +894,11 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/7-5.jpeg',
+            src: getAssetPath('/img/7-5.jpeg'),
             alt: 'Science laboratories'
           },
           {
-            src: '/img/7-6.jpg',
+            src: getAssetPath('/img/7-6.jpg'),
             alt: 'Sports and recreation facilities'
           }
         ],
@@ -907,12 +908,12 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/7-1.jpeg',
+            src: getAssetPath('/img/7-1.jpeg'),
             alt: 'Academic buildings',
             description: 'The client is highly satisfied with the overall construction, as it perfectly captures the original design concept of the house.'
           },
           {
-            src: '/img/7-2.jpeg',
+            src: getAssetPath('/img/7-2.jpeg'),
             alt: 'Library and research facilities',
             description: 'The client is highly satisfied with the overall construction, as it perfectly captures the original design concept of the house.'
           }
@@ -926,8 +927,8 @@ export const projects = [
     slug: 'Project 8',
     category: 'House Remodel',
     status: 'completed',
-    image: '/img/8-1.jpeg',
-    description: 'In this project, all materials chosen by the homeowner are not locally sourced, necessitating a departure from standard construction processes. We had to plan plumbing and electrical layouts based on the specifications of the products purchased by the homeowner. As a result, our communication with the client was nearly real-time throughout the construction process. Through persistent effort, we successfully achieved the exact look and feel the client envisioned for their home.',
+    image: getAssetPath('/img/8-1.jpeg'),
+            description: 'In this project, all materials chosen by the homeowner are not locally sourced, necessitating a departure from standard construction processes. We had to plan plumbing and electrical layouts based on the specifications of the products purchased by the homeowner. As a result, our communication with the client was nearly real-time throughout the construction process. Through persistent effort, we successfully achieved the exact look and feel the client envisioned for their home.',
     location: 'Cupertino',
     year: '2024',
     heroImage: '/img/8-1.jpeg',
@@ -936,11 +937,11 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/8-2.jpeg',
+            src: getAssetPath('/img/8-2.jpeg'),
             alt: 'Hospital building exterior'
           },
           {
-            src: '/img/8-3.jpeg',
+            src: getAssetPath('/img/8-3.jpeg'),
             alt: 'Medical facility construction'
           }
         ],
@@ -950,7 +951,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/8-4.jpeg',
+            src: getAssetPath('/img/8-4.jpeg'),
             alt: 'Operating theaters and medical equipment'
           }
         ],
@@ -960,7 +961,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/8-5.jpeg',
+            src: getAssetPath('/img/8-5.jpeg'),
             alt: 'Patient rooms',
           },
         ]
@@ -969,7 +970,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/8-6.jpeg',
+            src: getAssetPath('/img/8-6.jpeg'),
             alt: 'Emergency department',
           }
         ]
@@ -978,7 +979,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/8-7.jpeg',
+            src: getAssetPath('/img/8-7.jpeg'),
             alt: 'Outpatient clinics and diagnostic centers'
           }
         ],
@@ -987,11 +988,11 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/8-8.jpeg',
+            src: getAssetPath('/img/8-8.jpeg'),
             alt: 'Patient rooms',
           },
           {
-            src: '/img/8-9.jpeg',
+            src: getAssetPath('/img/8-9.jpeg'),
             alt: 'Emergency department',
           }
         ]
@@ -1000,11 +1001,11 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/8-10.jpeg',
+            src: getAssetPath('/img/8-10.jpeg'),
             alt: 'Patient rooms',
           },
           {
-            src: '/img/8-11.jpeg',
+            src: getAssetPath('/img/8-11.jpeg'),
             alt: 'Emergency department',
           }
         ]
@@ -1013,7 +1014,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/8-12.jpeg',
+            src: getAssetPath('/img/8-12.jpeg'),
             alt: 'Outpatient clinics and diagnostic centers'
           }
         ],
@@ -1026,8 +1027,8 @@ export const projects = [
     slug: 'Project 9',
     category: 'House Remodel',
     status: 'completed',
-    image: '/img/10-1.jpg',
-    description: 'This modern-style residence, located in Palo Alto, features a 9-foot high ceiling that maximizes natural light and enhances the spaciousness of the interior. The homeowner prioritized stylish and cohesive material selections that are both sleek and tactile. Throughout the construction process, we closely collaborated with the homeowner, referencing blueprints and confirming potential outcomes in advance to ensure efficiency and meet their expectations.',
+    image: getAssetPath('/img/10-1.jpg'),
+            description: 'This modern-style residence, located in Palo Alto, features a 9-foot high ceiling that maximizes natural light and enhances the spaciousness of the interior. The homeowner prioritized stylish and cohesive material selections that are both sleek and tactile. Throughout the construction process, we closely collaborated with the homeowner, referencing blueprints and confirming potential outcomes in advance to ensure efficiency and meet their expectations.',
     location: 'Palo Alto',
     year: '2023',
     heroImage: '/img/10-1.jpg',
@@ -1036,7 +1037,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/10-2.jpg',
+            src: getAssetPath('/img/10-2.jpg'),
             alt: 'Single Family Home Remodel overview'
           }
         ],
@@ -1045,11 +1046,11 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/10-3.jpg',
+            src: getAssetPath('/img/10-3.jpg'),
             alt: 'Residential units',
           },
           {
-            src: '/img/10-4.jpg',
+            src: getAssetPath('/img/10-4.jpg'),
             alt: 'Commercial office spaces',
 
           }
@@ -1059,11 +1060,11 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/10-5.jpg',
+            src: getAssetPath('/img/10-5.jpg'),
             alt: 'Retail and dining spaces'
           },
           {
-            src: '/img/10-6.jpg',
+            src: getAssetPath('/img/10-6.jpg'),
             alt: 'Public plaza and green spaces'
           }
         ],
@@ -1072,7 +1073,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/10-7.jpg',
+            src: getAssetPath('/img/10-7.jpg'),
             alt: 'Parking and infrastructure'
           }
         ],
@@ -1081,7 +1082,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/10-8.jpg',
+            src: getAssetPath('/img/10-8.jpg'),
             alt: 'Parking and infrastructure'
           }
         ],
@@ -1095,8 +1096,8 @@ export const projects = [
     slug: 'project-9',
     category: 'ADU',
     status: 'completed',
-    image: '/img/11-5.png',
-    description: 'This project features a compact residential unit similar to a condo. Due to limited storage space, the homeowner desired more storage options. After discussions with the homeowner, our team created a sunken space similar to a basement using concrete, and raised the crawl space. This solution not only ensured compliance with building codes but also maximized storage capacity. Additionally, it effectively mitigates termite risks to a certain extent.',
+    image: getAssetPath('/img/11-5.png'),
+            description: 'This project features a compact residential unit similar to a condo. Due to limited storage space, the homeowner desired more storage options. After discussions with the homeowner, our team created a sunken space similar to a basement using concrete, and raised the crawl space. This solution not only ensured compliance with building codes but also maximized storage capacity. Additionally, it effectively mitigates termite risks to a certain extent.',
     location: 'San Jose',
     year: '2023',
     heroImage: '/img/11-1.jpeg',
@@ -1105,7 +1106,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/11-2.png',
+            src: getAssetPath('/img/11-2.png'),
             alt: 'Single Family Home Remodel overview'
           }
         ],
@@ -1114,11 +1115,11 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/11-3.jpeg',
+            src: getAssetPath('/img/11-3.jpeg'),
             alt: 'Residential units',
           },
           {
-            src: '/img/11-4.png',
+            src: getAssetPath('/img/11-4.png'),
             alt: 'Commercial office spaces',
           }
         ]
@@ -1127,11 +1128,11 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/11-5.png',
+            src: getAssetPath('/img/11-5.png'),
             alt: 'Retail and dining spaces'
           },
           {
-            src: '/img/11-6.jpg',
+            src: getAssetPath('/img/11-6.jpg'),
             alt: 'Public plaza and green spaces'
           }
         ],
@@ -1145,8 +1146,8 @@ export const projects = [
     slug: 'project-10',
     category: 'House Remodel',
     status: 'completed',
-    image: '/img/12-8.jpg',
-    description: 'The focal point of this project is the bathroom, where the client opted for a striking black and white contrast in design. This bold contrast enhances the visual impact of the design. The bathtub is built-in, requiring framing during the construction phase to accommodate plumbing needs. The vanity in the bathroom features a floating design, necessitating a supporting frame. While floating cabinets offer easy cleaning, they provide less storage space compared to traditional designs.',
+    image: getAssetPath('/img/12-8.jpg'),
+            description: 'The focal point of this project is the bathroom, where the client opted for a striking black and white contrast in design. This bold contrast enhances the visual impact of the design. The bathtub is built-in, requiring framing during the construction phase to accommodate plumbing needs. The vanity in the bathroom features a floating design, necessitating a supporting frame. While floating cabinets offer easy cleaning, they provide less storage space compared to traditional designs.',
     location: 'Fremont',
     year: '2023',
     heroImage: '/img/12-8.jpg',
@@ -1155,7 +1156,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/12-2.webp',
+            src: getAssetPath('/img/12-2.webp'),
             alt: 'Single Family Home Remodel overview'
           }
         ],
@@ -1164,11 +1165,11 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/12-3.jpeg',
+            src: getAssetPath('/img/12-3.jpeg'),
             alt: 'Residential units',
           },
           {
-            src: '/img/12-4.jpeg',
+            src: getAssetPath('/img/12-4.jpeg'),
             alt: 'Commercial office spaces',
           }
         ]
@@ -1177,11 +1178,11 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/12-5.jpg',
+            src: getAssetPath('/img/12-5.jpg'),
             alt: 'Retail and dining spaces'
           },
           {
-            src: '/img/12-6.jpg',
+            src: getAssetPath('/img/12-6.jpg'),
             alt: 'Public plaza and green spaces'
           }
         ],
@@ -1190,7 +1191,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/12-7.jpg',
+            src: getAssetPath('/img/12-7.jpg'),
             alt: 'Parking and infrastructure'
           }
         ],
@@ -1200,7 +1201,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/12-1.jpeg',
+            src: getAssetPath('/img/12-1.jpeg'),
             alt: 'Parking and infrastructure'
           }
         ],
@@ -1213,8 +1214,8 @@ export const projects = [
     slug: 'project-11',
     category: 'ADU ',
     status: 'completed',
-    image: '/img/13-1.jpg',
-    description: 'his project features a compact residential unit similar to a condo. Due to limited storage space, the homeowner desired more storage options. After discussions with the homeowner, our team created a sunken space similar to a basement using concrete, and raised the crawl space. This solution not only ensured compliance with building codes but also maximized storage capacity. Additionally, it effectively mitigates termite risks to a certain extent.',
+    image: getAssetPath('/img/13-1.jpg'),
+            description: 'his project features a compact residential unit similar to a condo. Due to limited storage space, the homeowner desired more storage options. After discussions with the homeowner, our team created a sunken space similar to a basement using concrete, and raised the crawl space. This solution not only ensured compliance with building codes but also maximized storage capacity. Additionally, it effectively mitigates termite risks to a certain extent.',
     location: 'San Jose',
     year: '2022',
     heroImage: '/img/13-1.jpg',
@@ -1223,7 +1224,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/13-5.jpg',
+            src: getAssetPath('/img/13-5.jpg'),
             alt: 'Single Family Home Remodel overview'
           }
         ],
@@ -1233,11 +1234,11 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/13-3.jpg',
+            src: getAssetPath('/img/13-3.jpg'),
             alt: 'Residential units',
           },
           {
-            src: '/img/13-4.jpg',
+            src: getAssetPath('/img/13-4.jpg'),
             alt: 'Commercial office spaces',
           }
         ]
@@ -1246,7 +1247,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/13-2.jpg',
+            src: getAssetPath('/img/13-2.jpg'),
             alt: 'Retail and dining spaces'
           }
         ],
@@ -1260,8 +1261,8 @@ export const projects = [
     slug: 'project-12',
     category: 'House Remodel',
     status: 'completed',
-    image: '/img/15-1.jpeg',
-    description: 'Large openings allow daylight to penetrate deep into the interior, enhancing spatial depth and clarity.',
+    image: getAssetPath('/img/15-1.jpeg'),
+            description: 'Large openings allow daylight to penetrate deep into the interior, enhancing spatial depth and clarity.',
     location: 'San Jose',
     year: '2023',
     heroImage: '/img/15-1.jpeg',
@@ -1270,7 +1271,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/15-2.jpeg',
+            src: getAssetPath('/img/15-2.jpeg'),
             alt: 'Single Family Home Remodel overview'
           }
         ],
@@ -1280,7 +1281,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/15-3.jpg',
+            src: getAssetPath('/img/15-3.jpg'),
             alt: 'Single Family Home Remodel overview'
           }
         ],
@@ -1289,7 +1290,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/15-4.jpg',
+            src: getAssetPath('/img/15-4.jpg'),
             alt: 'Single Family Home Remodel overview'
           }
         ],
@@ -1298,7 +1299,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/15-5.jpeg',
+            src: getAssetPath('/img/15-5.jpeg'),
             alt: 'Single Family Home Remodel overview'
           }
         ],
@@ -1307,29 +1308,7 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/15-6.jpg',
-            alt: 'Single Family Home Remodel overview'
-          }
-        ],
-      },
-      {
-        layout: 'two',
-        images: [
-          {
-            src: '/img/15-7.jpeg',
-            alt: 'Residential units',
-          },
-          {
-            src: '/img/15-8.jpeg',
-            alt: 'Commercial office spaces',
-          },
-        ]
-      },
-      {
-        layout: 'one',
-        images: [
-          {
-            src: '/img/15-9.jpg',
+            src: getAssetPath('/img/15-6.jpg'),
             alt: 'Single Family Home Remodel overview'
           }
         ],
@@ -1338,24 +1317,11 @@ export const projects = [
         layout: 'two',
         images: [
           {
-            src: '/img/15-10.jpg',
+            src: getAssetPath('/img/15-7.jpeg'),
             alt: 'Residential units',
           },
           {
-            src: '/img/15-12.jpg',
-            alt: 'Commercial office spaces',
-          },
-        ]
-      },
-      {
-        layout: 'two',
-        images: [
-          {
-            src: '/img/15-14.jpg',
-            alt: 'Residential units',
-          },
-          {
-            src: '/img/15-13.jpg',
+            src: getAssetPath('/img/15-8.jpeg'),
             alt: 'Commercial office spaces',
           },
         ]
@@ -1364,7 +1330,42 @@ export const projects = [
         layout: 'one',
         images: [
           {
-            src: '/img/15-11.jpg',
+            src: getAssetPath('/img/15-9.jpg'),
+            alt: 'Single Family Home Remodel overview'
+          }
+        ],
+      },
+      {
+        layout: 'two',
+        images: [
+          {
+            src: getAssetPath('/img/15-10.jpg'),
+            alt: 'Residential units',
+          },
+          {
+            src: getAssetPath('/img/15-12.jpg'),
+            alt: 'Commercial office spaces',
+          },
+        ]
+      },
+      {
+        layout: 'two',
+        images: [
+          {
+            src: getAssetPath('/img/15-14.jpg'),
+            alt: 'Residential units',
+          },
+          {
+            src: getAssetPath('/img/15-13.jpg'),
+            alt: 'Commercial office spaces',
+          },
+        ]
+      },
+      {
+        layout: 'one',
+        images: [
+          {
+            src: getAssetPath('/img/15-11.jpg'),
             alt: 'Single Family Home Remodel overview'
           }
         ]
@@ -1393,25 +1394,25 @@ export const coreAdvantages = {
       id: 1,
       heading: 'Expert Team\nIn-House Construction',
       description: 'We handle all foundation and framing work in-house, ensuring full control over quality and schedule.',
-      image: '/img/14-2.jpg'
+      image: getAssetPath('/img/14-2.jpg')
     },
     {
       id: 2,
       heading: 'End-to-End Service\nSeamless Delivery',
       description: 'From survey and design to construction, our team manages every step efficiently and smoothly.',
-      image: '/img/14-3.jpeg'
+      image: getAssetPath('/img/14-3.jpeg')
     },
     {
       id: 3,
       heading: 'Cost-Effective\nHigh Value',
       description: 'Owning our crews and equipment reduces outsourcing, lowers costs, and maximizes ROI.',
-      image: '/img/14-4.jpeg'
+      image: getAssetPath('/img/14-4.jpeg')
     },
     {
       id: 4,
       heading: 'Experienced & Reliable',
       description: 'Years of diverse project experience ensure smooth execution and design realization.',
-      image: '/img/14-8.jpg'
+      image: getAssetPath('/img/14-8.jpg')
     }
   ]
 };
@@ -1425,8 +1426,8 @@ export const teamRows = [
       id: 1,
       name: 'Ryan',
       title: 'Chief Executive Officer',
-      image: '/img/team/kevin-patterson.webp',
-      bio: 'Ryan Deng brings over 15 years of experience in construction management and strategic leadership. Under his guidance, HBB CONSTRUCTION has grown into a leading construction company known for excellence and innovation.',
+      image: getAssetPath('/img/team/kevin-patterson.webp'),
+            bio: 'Ryan Deng brings over 15 years of experience in construction management and strategic leadership. Under his guidance, HBB CONSTRUCTION has grown into a leading construction company known for excellence and innovation.',
       email: 'ryand@hbbconstruction.com',
       phone: '+1 (650) 996-0715',
       experience: '15+ Years',
@@ -1437,8 +1438,8 @@ export const teamRows = [
       id: 2,
       name: 'Copper',
       title: 'Project Manager',
-      image: '/img/team/john-mitchell.webp',
-      bio: 'John Mitchell is a seasoned project manager with expertise in coordinating complex construction projects from inception to completion. His attention to detail and leadership skills ensure projects are delivered on time and within budget.',
+      image: getAssetPath('/img/team/john-mitchell.webp'),
+            bio: 'John Mitchell is a seasoned project manager with expertise in coordinating complex construction projects from inception to completion. His attention to detail and leadership skills ensure projects are delivered on time and within budget.',
       email: 'john.mitchell@hbbconstruction.com',
       phone: '+1 (555) 234-5678',
       experience: '15+ Years',
@@ -1448,8 +1449,8 @@ export const teamRows = [
       id: 3,
       name: 'Lynn',
       title: 'Project Manager',
-      image: '/img/team/david-ramirez.webp',
-      bio: 'David Ramirez is a highly skilled engineer specializing in structural design and site management. His technical expertise and problem-solving abilities have been instrumental in the success of numerous high-profile projects.',
+      image: getAssetPath('/img/team/david-ramirez.webp'),
+            bio: 'David Ramirez is a highly skilled engineer specializing in structural design and site management. His technical expertise and problem-solving abilities have been instrumental in the success of numerous high-profile projects.',
       email: 'david.ramirez@hbbconstruction.com',
       phone: '+1 (555) 345-6789',
       experience: '3+ Years',
@@ -1459,8 +1460,8 @@ export const teamRows = [
       id: 4,
       name: 'Bai',
       title: 'Project Manager',
-      image: '/img/team/david-ramirez.webp',
-      bio: 'David Ramirez is a highly skilled engineer specializing in structural design and site management. His technical expertise and problem-solving abilities have been instrumental in the success of numerous high-profile projects.',
+      image: getAssetPath('/img/team/david-ramirez.webp'),
+            bio: 'David Ramirez is a highly skilled engineer specializing in structural design and site management. His technical expertise and problem-solving abilities have been instrumental in the success of numerous high-profile projects.',
       email: 'david.ramirez@hbbconstruction.com',
       phone: '+1 (555) 345-6789',
       experience: '3+ Years',
@@ -1473,8 +1474,8 @@ export const teamRows = [
       id: 5,
       name: 'Suzy',
       title: 'Architectual Designer',
-      image: '/img/team/david-ramirez.webp',
-      bio: 'Suzy Zhang is a highly skilled architectual designer specializing in residential and commercial design. Her technical expertise and problem-solving abilities have been instrumental in the success of numerous high-profile projects.',
+      image: getAssetPath('/img/team/david-ramirez.webp'),
+            bio: 'Suzy Zhang is a highly skilled architectual designer specializing in residential and commercial design. Her technical expertise and problem-solving abilities have been instrumental in the success of numerous high-profile projects.',
       email: 'suzy@hbbconstruction.com',
       phone: '+1 (267) 292-1638',
       experience: '3+ Years',
@@ -1484,8 +1485,8 @@ export const teamRows = [
       id: 6,
       name: ' Structual Engineer',
       title: 'Structual Engineer',
-      image: '/img/team/david-ramirez.webp',
-      bio: 'David Ramirez is a highly skilled engineer specializing in structural design and site management. His technical expertise and problem-solving abilities have been instrumental in the success of numerous high-profile projects.',
+      image: getAssetPath('/img/team/david-ramirez.webp'),
+            bio: 'David Ramirez is a highly skilled engineer specializing in structural design and site management. His technical expertise and problem-solving abilities have been instrumental in the success of numerous high-profile projects.',
       experience: '3+ Years',
       specialties: ['Structual Engineering', 'Site Management', 'Technical Design']
     },
@@ -1493,8 +1494,8 @@ export const teamRows = [
       id: 7,
       name: 'Land Surveyors',
       title: 'Land Surveyors',
-      image: '/img/team/david-ramirez.webp',
-      bio: 'Our topographic surveys are prepared by licensed land surveyors in accordance with local jurisdiction requirements.',
+      image: getAssetPath('/img/team/david-ramirez.webp'),
+            bio: 'Our topographic surveys are prepared by licensed land surveyors in accordance with local jurisdiction requirements.',
       experience: '3+ Years',
       specialties: ['Land Surveyors', 'Site Management', 'Technical Design']
     },
@@ -1504,8 +1505,8 @@ export const teamRows = [
       id: 11,
       name: 'Construction Team',
       title: 'In-House Construction Crew',
-      image: '/img/team/construction-team.webp',
-      bio: 'Our in-house construction team consists of approximately 20 skilled professionals, organized into specialized groups to handle all aspects of project construction. With extensive experience, the team ensures high-quality execution and seamless coordination across all phases of construction.',
+      image: getAssetPath('/img/team/construction-team.webp'),
+            bio: 'Our in-house construction team consists of approximately 20 skilled professionals, organized into specialized groups to handle all aspects of project construction. With extensive experience, the team ensures high-quality execution and seamless coordination across all phases of construction.',
       experience: 'Approx. 20 Team Members',
       specialties: [
         'Structural Construction',
@@ -1520,8 +1521,8 @@ export const teamRows = [
       id: 12,
       name: 'Structural Team',
       title: 'Structural & Site Specialists',
-      image: '/img/team/structural-team.webp',
-      bio: 'The structural team, composed of 14 experienced members, is responsible for foundation, framing, demolition, grading, and insulation work. They can flexibly take on additional structure-related tasks as needed, ensuring construction quality and efficient on-site progress.',
+      image: getAssetPath('/img/team/structural-team.webp'),
+            bio: 'The structural team, composed of 14 experienced members, is responsible for foundation, framing, demolition, grading, and insulation work. They can flexibly take on additional structure-related tasks as needed, ensuring construction quality and efficient on-site progress.',
       experience: '14 Team Members',
       specialties: [
         'Foundation',
@@ -1536,8 +1537,8 @@ export const teamRows = [
       id: 13,
       name: 'Electrical Team',
       title: 'Licensed Electrical Crew',
-      image: '/img/team/electrical-team.webp',
-      bio: 'Our electrical team, consisting of 2 skilled members, handles both rough-in and finish wiring for residential and commercial projects. All work complies with California electrical codes and safety standards, ensuring reliable performance and long-term system integrity.',
+      image: getAssetPath('/img/team/electrical-team.webp'),
+            bio: 'Our electrical team, consisting of 2 skilled members, handles both rough-in and finish wiring for residential and commercial projects. All work complies with California electrical codes and safety standards, ensuring reliable performance and long-term system integrity.',
       experience: '2 Team Members',
       specialties: [
         'Electrical Rough-In',
@@ -1550,8 +1551,8 @@ export const teamRows = [
       id: 14,
       name: 'Interior Finishes Team',
       title: 'Interior Construction Specialists',
-      image: '/img/team/interior-team.webp',
-      bio: 'Our interior finishes team, composed of 4 members, focuses on the final stages of construction. They deliver high-quality workmanship across drywall, trim, painting, and flooring, ensuring attention to detail, material precision, and a refined final presentation.',
+      image: getAssetPath('/img/team/interior-team.webp'),
+            bio: 'Our interior finishes team, composed of 4 members, focuses on the final stages of construction. They deliver high-quality workmanship across drywall, trim, painting, and flooring, ensuring attention to detail, material precision, and a refined final presentation.',
       experience: '4 Team Members',
       specialties: [
         'Drywall',

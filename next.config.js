@@ -9,3 +9,5 @@ const nextConfig = {
   // basePath: '/repository-name',
   // trailingSlash: true,
 };
+
+module.exports = nextConfig;
